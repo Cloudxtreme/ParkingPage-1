@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Repurpose Network</title>
+	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<img id="bg-img" src="img/bg.jpg"></img>
+	<header>
+		<img id="header-banner" src="img/logo.png" alt="banner">
+		<ul id="navigation">
+			<li id="nav-home" class="selected" onclick="goto_page('home')">Home</li>
+			<li id="nav-about" onclick="goto_page('about')">About</li>
+			<li id="nav-team" onclick="goto_page('team')">Our Team</li>
+			<li id="nav-contact" onclick="goto_page('contact')" class="last">Contact Us</li>
+		</ul>
+	</header>
+	<div id="content-bg"></div>
+	<div id="content">
+		<section id="home" class="page">
+			<h1 id="coming-soon">Our website is coming soon!</h1>
+			<section id="email">
+				<h2 id="email-label">Sign up to join our mailing list:</h2>
+				<form id="email-form" action="">
+					<img id="email-form-icon" src="img/email.png">
+					<input type="text" id="email-form-text" name="EMAIL" placeholder="Enter your email">
+					<button type="submit" id="email-form-button">Sign Up</button>
+				</form>
+				<h3 id="email-error"></h3>
+			</section>
+			<section id="type" style="display:none;opacity:0;">
+				<h2 id="type-prompt">Are you a...</h2>
+				<div id="type-buttons">
+					<div id="type-button-school" onclick="submit_form('school')">School</div>
+					<div id="type-button-business" onclick="submit_form('business')">Business</div>
+					<div id="type-button-other" onclick="submit_form('other')">Other</div>
+				</div>
+			</section>
+			<section id="email-result" style="display:none;opacity:0;">
+				<p id="email-result-msg"></p>
+				<div id="email-result-button" onclick="close_result()">OK</div>
+			</section>
+		</section>
+		<section id="about" class="page" style="display:none">
+			<h1 id="about-header">Who we are.</h1>
+			<h3>Repurpose is an online marketplace that connects businesses with excess supplies to underfunded public schools. Our mission is to be the most convenient and trusted source for free and high quality used goods and professional services. Available to public and charter schools exclusively, supplies will be posted where schools can browse and claim the ones they need. A portion of each business subscription fee will be given to the local school of its choice, providing teachers and administrators a way to purchase unavailable but essential materials that millions of children depend on.</h3>
+		</section>
+		<section id="team" class="page" style="display:none">
+			<h1 id="team-header">Meet our team.</h1>
+			<div class="member">
+				<img class="member-img" src="img/team/darren.jpg">
+				<p class="member-name">Darren Varnado</p>
+				<p>Darren is a validated idea entrepreneur and technology business developer. His passion is to build business models that integrate corporate citizenship, business, and marketing disciplines to create new value for companies, brands, and society.</p>
+				<p>He is a seasoned strategist with deep experience working on the full-spectrum of business development,  social responsibility and cause-related issues, including environmental sustainability, community involvement, and governance. He takes a brand approach to business development and believes that best-in-class companies must embed corporate citizenship into their culture, products, and customer experiences.</p>
+			</div>
+			<div class="member">
+				<img class="member-img" src="img/team/sarah.jpg">
+				<p class="member-name">Sarah Armstrong</p>
+				<p>Sarah is involved in many aspects of business development including recruiting, team building, product development and operations management. Her primary responsibilities are around digital communications and brand development.</p>
+			</div>
+		</section>
+		<section id="contact" style="display:none">
+			<h1 id="about-header">Send us your thoughts.</h1>
+			<h3 id="contact-error"></h3>
+			<form id="contact-form" action="">
+			<input type="text" id="contact-name" name="name" placeholder="Your name">
+			<input type="text" id="contact-email" name="email" placeholder="Your email">
+			<textarea id="contact-msg" name="msg" placeholder="Your comment"></textarea>
+			<input id="contact-submit" type="submit" value="Send">
+			<input id="contact-reset" type="reset" value="Reset">
+			</form>
+			<h3 id="contact-success" style="display:none">Your message has been sent.</h3>
+		</section>
+	</div>
+	<footer>
+		<a href="https://www.facebook.com/therepurposenetwork" target="_blank"><img class="social-icon" src="img/social/facebook.png"></a>
+		<a href="https://twitter.com/repurposenetwrk" target="_blank"><img class="social-icon" src="img/social/twitter.png"></a>
+		<a href="https://www.linkedin.com/company/6440031" target="_blank"><img class="social-icon" src="img/social/linkedin.png"></a>
+	</footer>
+</body>
+</html>

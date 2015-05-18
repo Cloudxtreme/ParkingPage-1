@@ -1,0 +1,369 @@
+body {
+	margin: 0;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#header-banner {
+	width: 600px;
+	height: 187px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	top: 13px;
+}
+
+#navigation {
+	position: absolute;
+	display: block;
+	top: 210px;
+	width: 600px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0;
+	list-style: none;
+}
+
+#navigation li {
+	width: 120px;
+	padding: 5px 0;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+}
+
+#navigation li.selected {
+	background: #ccc;
+}
+
+#navigation li:not(.selected):hover {
+	cursor: pointer;
+}
+
+#navigation li:not(.last) {
+	margin-right: 35px;
+}
+
+#navigation li:hover {
+	background: #ccc;
+}
+
+#content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 260px;
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+}
+
+#content-bg {
+	position: absolute;
+	top: 280px;
+	background: black;
+	opacity: 0.1;
+	height: 350px;
+	width: 100%;
+}
+
+#bg-img {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/***********************************************
+   Home page
+***********************************************/
+
+#coming-soon {
+	margin-top: 70px;
+}
+
+#email-label {
+	margin-top: 60px;
+}
+
+#email-error {
+	color: #e32;
+	font-weight: bold;
+}
+
+#email-form {
+	height: 30px;
+	text-align: center;
+	font-size: 0;
+	width: 800px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#email-form-icon {
+	vertical-align: top;
+	width: 5%;
+	height: 100%;
+	background: #35d;
+	border-radius: 5px 0 0 5px;
+}
+
+#email-form-text {
+	width: 50%;
+	height: 100%;
+	border: 0;
+	font-size: 18px;
+	padding: 0 15px;
+}
+
+#email-form-button {
+	width: 15%;
+	height: 100%;
+	background: #2b4;
+	border: 0;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 0 5px 5px 0;
+	padding: 0;
+	vertical-align: top;
+	color: white;
+}
+
+#email-form-button:hover {
+	background: #3c3;
+}
+
+#type-prompt {
+	position: absolute;
+	top: 140px;
+}
+
+#type-buttons {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 200px;
+}
+
+#type-buttons div {
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	color: white;
+	border-radius: 5px;
+	margin: 0 10px;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+#type-button-school {
+	background: #2b4;
+}
+
+#type-button-school:hover {
+	background: #3c3;
+	cursor: pointer;
+}
+
+#type-button-business {
+	background: #35d;
+}
+
+#type-button-business:hover {
+	background: #46e;
+	cursor: pointer;
+}
+
+#type-button-other {
+	background: #555;
+}
+
+#type-button-other:hover {
+	background: #666;
+	cursor: pointer;
+}
+
+#email-result-msg {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+	font-size: 20px;
+	width: 600px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#email-result-msg.error {
+	color: #b33;
+}
+
+#email-result-button {
+	position: absolute;
+	top: 230px;
+	background: #333;
+	color: white;
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+}
+
+#email-result-button:hover {
+	background: #444;
+	cursor: pointer;
+}
+
+/***********************************************
+   About page
+***********************************************/
+
+#about-header {
+	margin-top: 70px;
+}
+
+#about h3 {
+	width: 700px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/***********************************************
+   Team page
+***********************************************/
+
+#team-header {
+	margin-top: 70px;
+}
+
+.member {
+	width: 600px;
+	left: 0;
+	right: 0;
+	margin: 40px auto;
+}
+
+.member-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.member-img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
+/***********************************************
+   Contact us page
+***********************************************/
+
+#contact-form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+	border: 0;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+#contact-form input.error, #contact-form textarea.error {
+	border: 1px solid #e32;
+}
+
+#contact-form input {
+	width: 247px;
+	height: 30px;
+	font-size: 18px;
+}
+
+#contact-msg {
+	width: 500px;
+	height: 150px;
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+#contact-error {
+	color: #e32;
+	font-weight: bold;
+}
+
+#contact-success {
+	color: #2b4;
+	font-weight: bold;
+}
+
+#contact-submit {
+	color: white;
+	cursor: pointer;
+	background: #2b4;
+}
+
+#contact-submit:hover {
+	background: #3c3;
+}
+
+#contact-reset {
+	color: white;
+	cursor: pointer;	
+	background: #555;
+}
+
+#contact-reset:hover {
+	background: #666;
+}
+
+/***********************************************
+   Footer
+***********************************************/
+
+footer {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.social-icon {
+	width: 30px;
+	height: 30px;
+	margin: 10px 5px;
+}
