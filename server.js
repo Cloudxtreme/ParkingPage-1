@@ -5,6 +5,7 @@ var bodyParser = require('body-parser')
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true})); 
+app.set('port', (process.env.PORT || 5000));
 
 var mailserver  = email.server.connect({
    user:    "repurposemailer@gmail.com", 
@@ -26,7 +27,7 @@ app.post('/mail', function (req, res) {
 	});
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(app.get('port'), function () {
 
   var host = server.address().address;
   var port = server.address().port;
