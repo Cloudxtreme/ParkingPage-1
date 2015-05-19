@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: "Open Sans", Helvetica, sans-serif;
 	overflow-x: hidden;
+	background: #eee;
 }
 
 h1, h2, h3 {
@@ -89,8 +90,9 @@ h3 {
 
 #bg-img {
 	position: fixed;
+	width: 100%;
 	left: 0;
-	bottom: 0;
+	bottom: 50px;
 }
 
 .page {
@@ -360,6 +362,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	text-align: center;
+	background: #ccc;
 }
 
 .social-icon {

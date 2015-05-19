@@ -119,7 +119,7 @@ function goto_page(page) {
 		break;
 		case "team":
 			anim_pages(current_page, "team", current_page === "contact" ? "right" : "left");
-			$("#content-bg").animate({height:"700px"}, 100);
+			$("#content-bg").animate({height:"900px"}, 100);
 			current_page = "team";
 		break;
 		case "contact":
